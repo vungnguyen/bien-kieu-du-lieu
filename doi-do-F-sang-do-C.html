@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label >độ F </label>
+<input id="doF" type="text" >
+<button onclick="chuyenDoi(document.getElementById('doF').value)">result</button>
+<p id="doC">độ C: </p>
+
+<script>
+    function chuyenDoi(num) {
+        num = parseFloat(num);
+        document.getElementById('doC').innerHTML = (num - 32) / 1.8;
+    }
+
+
+</script>
+</body>
+</html>
